@@ -4,3 +4,17 @@ $white: #ffff;
 $riverBed: #46525f;
 $pelorous:#39afbb;
 $pelorousVibrant:#3ba5bd;
+
+@mixin baseButton($bgColor){
+    height: 40px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: none;
+    background-color: $bgColor;
+    color: $white;
+    text-transform: uppercase;
+}
+
+button.blue{
+    @include baseButton($pelorous)
+}

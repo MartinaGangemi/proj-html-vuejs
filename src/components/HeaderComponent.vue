@@ -12,7 +12,7 @@
                 <li><a href="#">departments</a></li>
                 <li><a href="#">articles</a></li>
             </ul>
-            <button>Make appointment</button>
+            <button class="blue ms-5">Make appointment</button>
         </div>
     </header>
 </div>
@@ -38,7 +38,7 @@ export default {
              display: inline-block;
              margin-left: 2.5rem;
 
-             a{
+            a{
                 text-decoration: none;
                 color: white;
              }
@@ -48,15 +48,6 @@ export default {
              }
          }
 
-        button{
-            height: 40px;
-            width: 200px;
-            margin-left: 3rem;
-            border: none;
-            background-color: $pelorous;
-            color: $white;
-            text-transform: uppercase;
-        }
     }
 
     

@@ -1,5 +1,7 @@
 <template>
     <main>
-        main
+        <div class="container">
+            main
+        </div>
     </main>
 </template>
