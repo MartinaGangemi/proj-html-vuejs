@@ -1,7 +1,9 @@
 <template>
+    <!-- jumbotron -->
     <div class="jumbo ">
-        <div class="container ">
+        <div class="container">
             <div class="row jumbo-container d-flex align-items-center">
+                <!-- jumbotext -->
                 <div class="col-6 ">
                 <h1>Caring For Life</h1>
                 <p>
@@ -17,8 +19,7 @@
 <script>
 
 export default {
-  name: 'App',
-  
+  name: 'JumboComponent',
 }
 
 </script>
@@ -27,8 +28,7 @@ export default {
 .jumbo{
     background-image: url(@/assets/img/header-image-homepage.jpg);
     height: 850px;
-    position: relative;
-
+    
     .jumbo-container{
         height: 850px;
     }

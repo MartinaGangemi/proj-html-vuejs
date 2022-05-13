@@ -1,6 +1,4 @@
 <template>
-<div>
-    <JumboHeader />
     <header class="px-5 py-4 d-flex w-100 justify-content-between align-items-center">
         <div class="logo-header">
             <img src="@/assets/img/medical_logo_1x_light.png" alt="">
@@ -15,25 +13,23 @@
             <button class="blue ms-5">Make appointment</button>
         </div>
     </header>
-</div>
+     
 </template>
 
 <script>
-import JumboHeader from '@/components/JumboComponent.vue'
 
 export default {
   name: 'HeaderComponent',
-  components: {
-   JumboHeader
-  }
 }
+
 </script>
+
 
 <style lang="scss" scoped>
     header{
-        position: absolute;
-        top: 0;
-        height: 100px;
+       height: 100px;
+       position: absolute;
+       top: 0;
         ul li{
              display: inline-block;
              margin-left: 2.5rem;
