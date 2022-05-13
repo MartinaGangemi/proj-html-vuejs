@@ -1,6 +1,6 @@
 <template>
     <div class="bg-light py-5 mt-5">
-        <div class="container mt-5">
+        <div class="site-container mt-5">
             <div class="d-flex flex-column align-items-center">
                 <section class="w-50 text-center">
                     <h2>Meet our doctors</h2>

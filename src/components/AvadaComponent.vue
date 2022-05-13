@@ -1,5 +1,5 @@
 <template>
-    <div class="container mt-5">
+    <div class="site-container mt-5">
         <div class="d-flex flex-column align-items-center">
             <!-- text -->
             <section class="w-50 text-center">

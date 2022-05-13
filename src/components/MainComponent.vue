@@ -4,7 +4,10 @@
         <AvadaHealth />
         <OurDoctor />
         <HealthService />
-        <JumboMain />
+        <TourMain />
+        <LearnMain />
+        <MakeAppointment />
+        <ImgSlider />
     </main>
 </template>
 
@@ -13,7 +16,10 @@ import JumboHeader from '@/components/JumboComponent.vue'
 import AvadaHealth from '@/components/AvadaComponent.vue'
 import OurDoctor from '@/components/OurDoctorsComponent.vue'
 import HealthService from '@/components/HealthServiceComponent.vue'
-import JumboMain from '@/components/Jumbo2Component.vue'
+import TourMain from '@/components/TourMainComponent.vue'
+import LearnMain from '@/components/LearnMoreComponent.vue'
+import MakeAppointment from '@/components/AppointmentComponent.vue'
+import ImgSlider from '@/components/SliderComponent.vue'
 
 
 export default {
@@ -23,7 +29,10 @@ export default {
    AvadaHealth,
    OurDoctor,
    HealthService,
-   JumboMain
+   TourMain,
+   LearnMain,
+   MakeAppointment,
+   ImgSlider
   }
 }
 </script>

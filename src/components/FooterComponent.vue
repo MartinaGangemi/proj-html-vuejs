@@ -1,6 +1,10 @@
 <template>
     <footer>
-        <div class="container">footer</div>
-       
+        <div class="row">
+            <div class="col-4">Lorem ipsum dolor sit.</div>
+            <div class="col-4">Lorem ipsum dolor sit.</div>
+            <div class="col-4">Lorem ipsum dolor sit.</div>
+        </div>
+    <div class="bg-light">Copyright</div>   
     </footer>
 </template>

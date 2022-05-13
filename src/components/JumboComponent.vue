@@ -1,7 +1,7 @@
 <template>
     <!-- jumbotron -->
     <div class="jumbo ">
-        <div class="container">
+        <div class="site-container">
             <div class="row jumbo-container d-flex align-items-center">
                 <!-- jumbotext -->
                 <div class="col-6 ">
@@ -28,6 +28,7 @@ export default {
 .jumbo{
     background-image: url(@/assets/img/header-image-homepage.jpg);
     height: 850px;
+    background-position-x: center;
     
     .jumbo-container{
         height: 850px;
