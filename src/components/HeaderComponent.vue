@@ -1,25 +1,28 @@
 <template>
-    <header class="px-5 py-4 d-flex w-100 justify-content-between align-items-center">
-        <div class="logo-header">
-            <img src="@/assets/img/medical_logo_1x_light.png" alt="">
-        </div>
-        <div class="text-uppercase d-flex align-items-center">
-            <ul class="mb-0">
-                <li><a class ="active" href="#">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">departments</a></li>
-                <li><a href="#">articles</a></li>
-            </ul>
-            <button class="blue ms-5">Make appointment</button>
+    <header>
+        <Nav />
+        <div class="site-container">
+            <div class="row jumbo-container text-light m-0 p-0 align-items-center">
+                <!-- jumbotext -->
+                <div class="col-7 ">
+                <h1>Caring <span class="text-color">For Life</span> </h1>
+                <p class="mt-3">
+                    kind words can be short and easy to speak, but their echoes are truly endless. Avada Health focused on you as if it was our own family.
+                </p>
+                <button class="blue py-4 mt-5">Learn More</button>
+            </div>
+            </div>
         </div>
     </header>
-     
 </template>
 
 <script>
-
+import Nav from '@/components/NavBarComponent.vue'
 export default {
   name: 'HeaderComponent',
+  components:{
+      Nav
+  }
 }
 
 </script>
@@ -27,23 +30,32 @@ export default {
 
 <style lang="scss" scoped>
     header{
-       height: 100px;
-       position: absolute;
-       top: 0;
-        ul li{
-             display: inline-block;
-             margin-left: 2.5rem;
+        background-image: url(@/assets/img/header-image-homepage.jpg);
+        height: 850px;
+        background-size: cover;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-color: #bcbcbd33;;
+        background-blend-mode: multiply;
+    
+        .jumbo-container{
+            height: 850px;
+            position: absolute;
+            top: 0;
+            font-size: 1.5rem;
+            font-weight: 300;
+            h1{
+                font-weight: 300;
+                font-size: 4rem;
+            }
+            .text-color{
+                color: $pelorous;
+            }
 
-            a{
-                text-decoration: none;
-                color: white;
-             }
-
-             .active{
-                 color: $pelorousVibrant;
-             }
-         }
-
+            button{
+                font-size: 1.2rem;
+            }
+        }
     }
 
     

@@ -1,49 +1,27 @@
 <template>
-    <div class="bg-light py-5 mt-5">
+    <div class="bg-doctor py-5 mt-5">
         <div class="site-container mt-5">
             <div class="d-flex flex-column align-items-center">
                 <section class="w-50 text-center">
-                    <h2>Meet our doctors</h2>
-                <hr>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum in aliquid neque corrupti animi ab porro molestias, saepe sapiente iste, asperiores voluptatem! Nesciunt dicta consectetur sint, distinctio voluptatibus omnis! Doloribus
+                    <img src="@/assets/img/icon-5.png" alt="">
+                    <h2 class="mt-3">Meet our doctors</h2>
+                <p class="mt-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus eos rerum dolorum, incidunt sequi odit. Excepturi magni, sed modi aspernatur expedita magnam culpa consequuntur placeat?
                 </p>
                 </section>
             </div>
             <div class="row gx-5 mt-5">
-                <div class="col-4">
+                <!-- doctor card -->
+                <div class="col-4"  v-for="(doctor, index) in doctors" :key="index">
                     <div class="card bg-white rounded-0 border-0">
-                        <img src="@/assets/img/doctor-1.jpg" alt="">
+                        <img :src="doctor.src" alt="">
                         <section class="p-5">
-                            <h5>Lorem, ipsum dolor.</h5>
-                            <h6>Lorem ipsum dolor sit.</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, labore!</p>
+                            <h5 class="text-uppercase">{{doctor.name}}</h5>
+                            <h5 class="mt-3">{{doctor.mansion}}</h5>
+                            <p>{{doctor.description}}</p>
                         </section>
                     </div>
                 </div>
-                <!-- doctor-2 -->
-                <div class="col-4">
-                    <div class="card bg-white rounded-0 border-0">
-                        <img src="@/assets/img/doctor-1.jpg" alt="">
-                        <section class="p-5">
-                            <h5>Lorem, ipsum dolor.</h5>
-                            <h6>Lorem ipsum dolor sit.</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, labore!</p>
-                        </section>
-                    </div>
-                </div>
-                <!-- doctor-3 -->
-                <div class="col-4 ">
-                    <div class="card  bg-white rounded-0 border-0">
-                        <img src="@/assets/img/doctor-1.jpg" alt="">
-                        <section class="p-5">
-                            <h5>Lorem, ipsum dolor.</h5>
-                            <h6>Lorem ipsum dolor sit.</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, labore!</p>
-                        </section>
-                    </div>
-                </div>
-                
             </div>
         </div>
     </div>
@@ -53,7 +31,56 @@
 
 
 export default{
-    name:"OurDoctorsComponent"
+    name:"OurDoctorsComponent",
+    data(){
+        return{
+            doctors:[
+                {
+                    name: "Jon Snow",
+                    mansion:"Anestheologist",
+                    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, labore!",
+                    src: require(`@/assets/img/doctor-1.jpg`),
+                },
+                {
+                    name: "Tony Stark",
+                    mansion:"Cardiologist",
+                    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, labore!",
+                    src: require(`@/assets/img/doctor-2.jpg`),
+                },
+                {
+                    name: "Anna Smith",
+                    mansion:"Nurse Practitioner",
+                    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, labore!",
+                    src: require(`@/assets/img/doctor-3.jpg`),
+                },
+            ]
+        }
+    }
     
 }
 </script>
+
+<style lang=scss scoped>
+    h2{
+        position: relative;
+        text-transform: uppercase;
+    }
+    h2:after {
+        border-bottom: solid 2px $light;
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 40%;
+        top: 60px;
+        margin: 0 auto;
+    }
+
+    .bg-doctor{
+        background-color: $Gallery;
+    }
+
+    .card p{
+        color: $Raven;
+    }
+</style>

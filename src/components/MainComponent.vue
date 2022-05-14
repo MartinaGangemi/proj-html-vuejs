@@ -1,6 +1,5 @@
 <template>
     <main>
-        <JumboHeader />
         <AvadaHealth />
         <OurDoctor />
         <HealthService />
@@ -12,7 +11,6 @@
 </template>
 
 <script>
-import JumboHeader from '@/components/JumboComponent.vue'
 import AvadaHealth from '@/components/AvadaComponent.vue'
 import OurDoctor from '@/components/OurDoctorsComponent.vue'
 import HealthService from '@/components/HealthServiceComponent.vue'
@@ -25,7 +23,6 @@ import ImgSlider from '@/components/SliderComponent.vue'
 export default {
   name: 'MainComponent',
   components: {
-   JumboHeader,
    AvadaHealth,
    OurDoctor,
    HealthService,
