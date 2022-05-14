@@ -59,10 +59,10 @@ export default{
 <style  lang="scss" scoped>
    section{
        width: 70%;
-
     }
 
     .text{
         color: $riverBed;
+        font-size: 1.1rem;
     }
 </style>

@@ -32,6 +32,7 @@ export default {
     header{
         background-image: url(@/assets/img/header-image-homepage.jpg);
         height: 850px;
+        font-size: 1rem;
         background-size: cover;
         background-position-x: center;
         background-repeat: no-repeat;
@@ -46,7 +47,7 @@ export default {
             font-weight: 300;
             h1{
                 font-weight: 300;
-                font-size: 4rem;
+                font-size: 5rem;
             }
             .text-color{
                 color: $pelorous;

@@ -35,7 +35,7 @@
              }
 
              .active{
-                 color: $pelorousVibrant;
+                 color: $pelorous;
              }
          }
    }
