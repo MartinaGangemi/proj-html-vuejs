@@ -1,18 +1,97 @@
 <template>
     <div class="bg">
-        prova
+        <div class="container text-center">
+            <VueSlickCarousel v-bind="settings">
+                <img  v-for="(img, index) in slider" :src="img.src" :key="index" alt="" >
+            </VueSlickCarousel>
+        </div>
+            
     </div>
+   
 </template>
 <script>
-export default{
-    name:"SliderComponent"
+import VueSlickCarousel from 'vue-slick-carousel'
+  import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+  // optional style for arrows & dots
+  import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+export default {
+    name:"SliderComponent",
     
+    components: {
+        VueSlickCarousel,
+    },
+    data(){
+
+        return{
+            settings: {
+            "arrows": false,
+            "dots": false,
+            "infinite": true,
+            "slidesToShow": 4,
+            "slidesToScroll": 1,
+            "autoplay": true,
+            "speed": 3000,
+            "autoplaySpeed": 1000,
+            
+            "pauseOnHover": true
+        },
+            
+            slider:[
+                {   
+                    src:require(`@/assets/img/client-logos-1.png`)
+                },
+                {   
+                    src:require(`@/assets/img/client-logos-2.png`)
+                },
+                {   
+                    src:require(`@/assets/img/client-logos-3.png`)
+                },
+                {
+                    src:require(`@/assets/img/client-logos-4.png`)
+                },
+                {   
+                    src:require(`@/assets/img/client-logos-1.png`)
+                },
+                {   
+                    src:require(`@/assets/img/client-logos-2.png`)
+                },
+                {   
+                    src:require(`@/assets/img/client-logos-3.png`)
+                },
+                {
+                    src:require(`@/assets/img/client-logos-4.png`)
+                },
+               
+            ]
+        }
+        
+    },
+
+    methods:{
+        
+    }
 }
+
+
 </script>
 
 <style lang="scss" scoped>
 .bg{
     background-image: url(@/assets/img/rgb-gradient-bar-for-logo-carrasel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.slider-container{
+    position: relative;
+}
+
+.tasti{
+   position: absolute;
+    width: 100%;
+    top: 50%;
+    justify-content: space-between;
+}
+
 
 </style>

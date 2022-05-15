@@ -1,12 +1,27 @@
 <template>
-    <div class="row m-0">
-        <div class="col-4 bg-success text-center p-5">
-            <h3>Lorem, ipsum dolor.</h3>
+    <div class="row m-0 text-white">
+        <!-- col -->
+        <div class="col-4 box-1 text-center p-5 ">
+            <h4>Emergency care</h4>
+            <img class="my-2" src="@/assets/img/wave-divider.png" alt="">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, maxime velit expedita at repellat perferendis iste ratione provident? Error, delectus.</p>
-            <button>learn more</button>
+            <div class="d-flex justify-content-center mt-4"><button class="transparent ">learn more</button></div>
         </div>
-        <div class="col-4 bg-danger">emergency care</div>
-        <div class="col-4 bg-primary">emergency care</div>
+        <!-- col -->
+        <div class="col-4 box-2 text-center p-5 ">
+            <h4>Emergency care</h4>
+            <img class="my-2" src="@/assets/img/wave-divider.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, maxime velit expedita at repellat perferendis iste ratione provident? Error, delectus.</p>
+            <div class="d-flex justify-content-center mt-4"><button class="transparent">learn more</button></div>
+        </div>
+        <!-- col -->
+        <div class="col-4 box-3 text-center  p-5 ">
+            <h4>Emergency care</h4>
+            <img class="my-2" src="@/assets/img/wave-divider.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, maxime velit expedita at repellat perferendis iste ratione provident? Error, delectus.</p>
+            <div class="d-flex justify-content-center mt-4"><button class="transparent ">learn more</button></div>
+        </div>
+        
     </div>
 </template>
 
@@ -16,3 +31,21 @@ export default{
     
 }
 </script>
+
+<style lang="scss" scoped>
+    p{
+        font-size: 1rem;
+    }
+
+    .box-1{
+        background-color: #3AAFBF;
+    }
+
+    .box-2{
+        background-color: #3597C3;
+    }
+
+    .box-3{
+        background-color: #327EC7;
+    }
+</style>

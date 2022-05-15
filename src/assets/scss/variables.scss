@@ -3,25 +3,19 @@ $white: #ffff;
 $riverBed: #46525f;
 $pelorous:#39afbb;
 $FrenchGray:#bcbcbd;
-$Firefly:#081425;
-$Contessa: #bd7a69;
-$ThunderBid:#cc201f;
-
-// Median cut
 $light: #D1D1D1;
 $Gallery: #F7F7F7;
-$Raven: #7c858f;
-
-$pelorousVibrant: #3ba5bd;
 
 
-@mixin baseButton($bgColor){
+
+
+@mixin baseButton($bgColor, $border){
     height: 40px;
     padding-left: 2rem;
     padding-right: 2rem;
     display: flex;
     align-items: center;
-    border: none;
+    border: 2px solid $border;
     background-color: $bgColor;
     color: $white;
     text-transform: uppercase;
@@ -29,5 +23,9 @@ $pelorousVibrant: #3ba5bd;
 }
 
 button.blue{
-    @include baseButton($pelorous)
+    @include baseButton($pelorous, $pelorous)
+}
+
+button.transparent{
+    @include baseButton(transparent, $white)
 }

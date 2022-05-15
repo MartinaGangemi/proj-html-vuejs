@@ -63,6 +63,6 @@ export default{
 
     .text{
         color: $riverBed;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 </style>
