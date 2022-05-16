@@ -32,7 +32,6 @@ export default {
             "autoplay": true,
             "speed": 3000,
             "autoplaySpeed": 1000,
-            
             "pauseOnHover": true
         },
             
@@ -67,9 +66,7 @@ export default {
         
     },
 
-    methods:{
-        
-    }
+   
 }
 
 
