@@ -7,8 +7,6 @@
 }
 
 body{
-    color:$riverBed;
-    font-family: 'Gloria Hallelujah', cursive;
     font-family: 'Source Sans Pro', sans-serif;
     font-size:1.3rem;
     color: $riverBed;
@@ -28,7 +26,7 @@ h2{
     font-weight: 300;
 }
 
-.fa-facebook-square, .fa-twitter-square, .fa-instagram-square{
+.fa-facebook-square, .fa-twitter-square, .fa-instagram-square, .fa-youtube-square{
     font-size: 2rem;
     margin-right: 0.8rem;
 }
@@ -41,6 +39,21 @@ h2{
     color: #54ACEE;
 }
 
+.fa-youtube-square{
+    color: #CD201F;
+}
 .fa-instagram-square{
     color:#3F729B ;
 }
+
+.fa-phone-flip, .fa-location-dot, .fa-circle-chevron-right{
+    margin-right: 1rem;
+    color: $pelorous;
+}
+
+
+.fa-circle-chevron-right{
+    font-size: 1.2rem;
+}
+
+

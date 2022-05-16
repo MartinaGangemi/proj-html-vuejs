@@ -2,30 +2,42 @@
 $white: #ffff;
 $riverBed: #46525f;
 $pelorous:#39afbb;
-$FrenchGray:#bcbcbd;
 $light: #D1D1D1;
 $Gallery: #F7F7F7;
 
 
+// button type
 
-
-@mixin baseButton($bgColor, $border){
+@mixin baseButton($bgColor, $border, $textcolor, $px, $hoverBg, $hoverBorder, $hoverColor){
     height: 40px;
     padding-left: 2rem;
     padding-right: 2rem;
     display: flex;
     align-items: center;
-    border: 2px solid $border;
+    border: $px solid $border;
     background-color: $bgColor;
-    color: $white;
+    color:$textcolor ;
     text-transform: uppercase;
     font-weight: 300;
+    transition: 0.5s;
+
+    &:hover {
+		color: $hoverColor;
+		background-color: $hoverBg;
+        border: $px solid $hoverBorder;
+        
+	}
 }
 
 button.blue{
-    @include baseButton($pelorous, $pelorous)
+    @include baseButton($pelorous, $pelorous, $white, 1px, #327EC7,#327EC7, $white )
 }
 
+
 button.transparent{
-    @include baseButton(transparent, $white)
+    @include baseButton(transparent, $white, $white, 2px , $white, $white, $pelorous)
+}
+
+button.lighter{
+    @include baseButton(transparent, gray, gray, 1px , gray,gray, $white)
 }

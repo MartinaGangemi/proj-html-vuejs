@@ -89,6 +89,7 @@ export default{
 
     .card p{
        font-size: 1rem;
+       color: gray;
     }
 
     

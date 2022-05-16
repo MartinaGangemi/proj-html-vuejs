@@ -39,12 +39,16 @@ export default {
         background-color: #bcbcbd33;;
         background-blend-mode: multiply;
     
-        .jumbo-container{
+        .site-container{
             height: 850px;
-            position: absolute;
-            top: 0;
-            font-size: 1.5rem;
-            font-weight: 300;
+            position: relative;
+            bottom: 96px;
+            .jumbo-container{
+                height: 100%;
+                font-size: 1.5rem;
+                font-weight: 300;
+            }
+        
             h1{
                 font-weight: 300;
                 font-size: 5rem;

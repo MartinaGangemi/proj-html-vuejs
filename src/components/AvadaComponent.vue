@@ -2,7 +2,7 @@
     <div class="site-container mt-5">
         <div class="d-flex flex-column align-items-center">
             <!-- text -->
-            <section class="text-center text-dark mt-4">
+            <section class="text-center mt-4">
                 <h2>Welcome to Avada Health</h2>
             <p class="mt-4">
                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam porro sunt at nobis libero nemo ipsa. Dolore vero placeat explicabo! Voluptatum ipsam nemo sequi officia.
@@ -13,7 +13,7 @@
             <!-- col -->
             <div class="col-3 m-0 text-center" v-for="(service, index) in services" :key="index" >
                 <img :src="service.src" alt="">
-                <h5 class="text-uppercase text-dark mt-2">{{service.title}}</h5>
+                <h5 class="text-uppercase mt-2">{{service.title}}</h5>
                 <p class="mt-3 text">{{service.text}}</p>
             </div>
             
@@ -62,7 +62,9 @@ export default{
     }
 
     .text{
-        color: $riverBed;
-        font-size: 1rem;
+       font-size: 1rem;
+       color: gray;
     }
+
+    
 </style>
