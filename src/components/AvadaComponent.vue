@@ -66,5 +66,19 @@ export default{
        color: gray;
     }
 
+    .col-3{
+       cursor: pointer;
+    }
+
+    h5{
+         transition:color 0.2s;
+    }
+
+    .col-3:hover h5{
+        color: $pelorous;
+    }
+
+
+
     
 </style>

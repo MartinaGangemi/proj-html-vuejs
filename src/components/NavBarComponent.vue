@@ -27,11 +27,14 @@
         ul li{
              display: inline-block;
              margin-left: 2rem;
-             
-
+            
             a{
                 text-decoration: none;
                 color: white;
+                transition: 0.2s;
+                 &:hover{
+                 color: $pelorous;
+             }
              }
 
              .active{

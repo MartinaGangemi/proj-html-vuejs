@@ -41,10 +41,9 @@ export default {
     
         .site-container{
             height: 850px;
-            position: relative;
-            bottom: 96px;
+            
             .jumbo-container{
-                height: 100%;
+                height: calc(100% - 192px);
                 font-size: 1.5rem;
                 font-weight: 300;
             }

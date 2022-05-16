@@ -10,7 +10,12 @@
                     <div class="col-6"><input class="form-control" placeholder="Name*" type="name" required></div>
                     <div class="col-6"><input class="form-control" placeholder="Email*" type="email" required></div>
                     <div class="col-6"><input class="form-control" placeholder="Phone Number*" type="tel" required></div>
-                    <div class="col-6"><input class="form-control " placeholder=" Appontment date" type="date"  required></div>
+                    <div class="col-6">
+                         <font-awesome-icon icon="fa-solid fa-calendar-days" /> 
+                        <date-picker   
+                        :disabled-date="disabledBeforeToday"  class=" picker-class form-control" v-model="value1" format="DD/MM/YYYY" placeholder=" Appontment date*" type="date"   required >
+                        </date-picker>
+                    </div>
                     <div class="col 12">
                         <textarea class="form-control"  rows="3" placeholder="How can we help?*" required></textarea>
                     </div>
@@ -27,10 +32,32 @@
 </template>
 
 <script>
+import DatePicker from 'vue2-datepicker';
+import 'vue2-datepicker/index.css';
+
 export default{
-    name:"AppointmentComponent"
-    
-}
+    name:"AppointmentComponent",
+    components: { 
+        DatePicker 
+        },
+   
+    data() {
+    return {
+        value1: "",
+        };
+    },
+   methods: {
+    disabledBeforeToday(date) {
+        const today = new Date();
+        return date < today
+    }
+
+   }
+
+   
+ 
+} 
+
 </script>
 
 
@@ -56,30 +83,24 @@ export default{
         color: #8FA0A7;
         padding-top: 0.7rem;
         padding-bottom: 0.7rem;
-        
-    }
 
-    .form-control:focus{
-       outline-offset: 0;
+         &:focus{
+        outline-offset: 0;
         box-shadow: none!important;
-        border: 1px solid #8FA0A7; 
+        border: 1px solid $pelorous; 
         color: #8FA0A7;
+        }
+
+        &:hover{
+            border: solid 1px $pelorous;
+        }
     }
 
-
-
-
-input[type=date] {
-    display: flex;
-    flex-direction:row-reverse;
-}
-
-
-
-::-webkit-calendar-picker-indicator {
-    filter: invert(1);
-    margin-right: 1rem;
-}
+    .fa-calendar-days{
+        color: gray;
+        position: absolute;
+        padding:0.7rem
+    }
 
 
 
@@ -96,8 +117,6 @@ input[type=date] {
         top: 80px;
         margin: 0 auto;
     }
-    
-    
 }
 
 </style>
