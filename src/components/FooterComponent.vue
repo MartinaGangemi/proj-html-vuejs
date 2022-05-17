@@ -2,7 +2,7 @@
     <footer>
         <div class="row m-0 p-5 gy-5">
             <!-- logo -->
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-6 col-lg-4">
                 <img src="@/assets/img/medical_logo_1x_dark.png" alt="">
                 <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam rerum earum beatae repellat. Voluptatem debitis asperiores perferendis sint, magnam ex, adipisci laboriosam officiis itaque libero nisi ab dolor delectus.</p>
                 <!-- social -->
@@ -13,7 +13,7 @@
                 <a href="#"><font-awesome-icon icon="fa-brands fa-instagram-square" /></a>
             </div>
             <!-- information -->
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-6 col-lg-4">
                 <h5 class="text-uppercase info">contact information</h5>
                 <ul class="mt-5 ps-0">
                     <li>
@@ -22,12 +22,12 @@
                     </li>
                     <li class="mt-2">
                         <font-awesome-icon icon="fa-solid fa-phone-flip" />
-                        121 king Street, London United Kingdom
+                        1.800.458.556
                     </li>
                 </ul>
             </div>
             <!-- medical departments -->
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-6 col-lg-4">
                 <h5 class="text-uppercase departments">medical departments</h5>
                 <ul class="mt-5 ps-0">
                     <li v-for="(department, index) in departments" :key="index" class="mt-1">

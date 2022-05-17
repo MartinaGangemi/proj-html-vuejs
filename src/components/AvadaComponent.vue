@@ -11,7 +11,7 @@
         </div>
         <div class="row wrap mt-5 m-0">
             <!-- col -->
-            <div class="col-12 col-sm-6 col-md-3  m-0 text-center" v-for="(service, index) in services" :key="index" >
+            <div class="service col-12 col-sm-6 col-md-3  m-0 text-center" v-for="(service, index) in services" :key="index" >
                 <img :src="service.src" alt="">
                 <h5 class="text-uppercase mt-2">{{service.title}}</h5>
                 <p class="mt-3 text">{{service.text}}</p>
@@ -66,15 +66,14 @@ export default{
        color: gray;
     }
 
-    .col-3{
-       cursor: pointer;
-    }
-
+    
     h5{
          transition:color 0.2s;
     }
-
-    .col-3:hover h5{
+    .service{
+        cursor: pointer;
+    }
+    .service:hover h5{
         color: $pelorous;
     }
 

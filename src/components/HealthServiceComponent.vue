@@ -93,11 +93,11 @@ export default{
          transition:color 0.2s;
     }
 
-    .col-4{
+    .services{
          cursor: pointer;
     }
 
-    .col-4:hover h5{
+    .services:hover h5{
         color: $pelorous;
     }
 

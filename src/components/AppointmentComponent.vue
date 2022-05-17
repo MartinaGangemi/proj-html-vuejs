@@ -1,6 +1,6 @@
 <template>
-    <div class="jumbo py-1" id="appointment">
-        <div class="site-container jumbo-text d-flex flex-column align-items-center justify-content-center">
+    <div class="jumbo " id="appointment">
+        <div class="site-container p-0 jumbo-text d-flex flex-column align-items-center justify-content-center">
             <section class="text-light text-center">
                 <h2>Make an appointment</h2>
                 <p class="mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus minima id ad, necessitatibus fuga blanditiis facilis dolores sit dolore quas saepe adipisci, inventore officiis tempore nulla rem dolor itaque vero!</p>
@@ -13,7 +13,7 @@
                     <div class="col-12 col-sm-6">
                          <font-awesome-icon icon="fa-solid fa-calendar-days" /> 
                         <date-picker   
-                        :disabled-date="disabledBeforeToday"  class=" picker-class form-control" v-model="value1" format="DD/MM/YYYY" placeholder=" Appontment date*" type="date"   required >
+                        :disabled-date="disabledBeforeToday"  class=" picker-class form-control" v-model="value" :default-value="new Date()" format="DD/MM/YYYY" placeholder=" Appontment date*" type="date"   required >
                         </date-picker>
                     </div>
                     <div class="col 12">
@@ -43,19 +43,15 @@ export default{
    
     data() {
     return {
-        value1: "",
+        value: "",
         };
     },
    methods: {
     disabledBeforeToday(date) {
         const today = new Date();
         return date < today
+        }
     }
-
-   }
-
-   
- 
 } 
 
 </script>
@@ -64,13 +60,13 @@ export default{
 <style lang="scss" scoped>
 .jumbo{
     background-image: url(@/assets/img/make-an-appointment.jpg);
-    min-height: 900px;
+    height: 900px;
     background-image: contain;
     background-position: center;
     
     .site-container{
         height: 100%;
-        padding: 0;
+        
     }
 
     form, section{
