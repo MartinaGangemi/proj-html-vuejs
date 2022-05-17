@@ -2,17 +2,14 @@
     <div class="bg">
         <div class="container text-center">
             <VueSlickCarousel v-bind="settings">
-                <img  v-for="(img, index) in slider" :src="img.src" :key="index" alt="" >
+                <img class="p-4" v-for="(img, index) in slider" :src="img.src" :key="index" alt="" >
             </VueSlickCarousel>
         </div>
-            
     </div>
-   
 </template>
 <script>
 import VueSlickCarousel from 'vue-slick-carousel'
   import 'vue-slick-carousel/dist/vue-slick-carousel.css'
-  // optional style for arrows & dots
   import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 export default {
     name:"SliderComponent",
@@ -79,16 +76,6 @@ export default {
     background-size: cover;
 }
 
-.slider-container{
-    position: relative;
-}
-
-.tasti{
-   position: absolute;
-    width: 100%;
-    top: 50%;
-    justify-content: space-between;
-}
 
 
 </style>

@@ -1,11 +1,11 @@
 <template>
-    <div class="jumbo">
+    <div class="jumbo" id="appointment">
         <div class="site-container jumbo-text d-flex flex-column align-items-center justify-content-center">
             <section class="text-light text-center">
-                <h2>Make an appontment</h2>
+                <h2>Make an appointment</h2>
                 <p class="mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus minima id ad, necessitatibus fuga blanditiis facilis dolores sit dolore quas saepe adipisci, inventore officiis tempore nulla rem dolor itaque vero!</p>
             </section>
-            <form  class="mt-4" action="">
+            <form  class="mt-4" >
                 <div class="row g-4">
                     <div class="col-6"><input class="form-control" placeholder="Name*" type="name" required></div>
                     <div class="col-6"><input class="form-control" placeholder="Email*" type="email" required></div>
@@ -101,8 +101,6 @@ export default{
         position: absolute;
         padding:0.7rem
     }
-
-
 
     h2{
         position: relative;

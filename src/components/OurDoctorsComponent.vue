@@ -87,17 +87,20 @@ export default{
         background-color: $Gallery;
     }
 
+    .card{
+        img{
+        transition:0.3s;
+        }
+        img:hover{
+            transform: scale(1.05);
+            box-shadow:0px 0px 10px 0px #888888;
+        }
+    }
     .card p{
        font-size: 1rem;
        color: gray;
     }
 
-    img{
-        transition:0.3s;
-    }
-    img:hover{
-        transform: scale(1.05);
-        box-shadow:0px 0px 10px 0px #888888;
-    }
+    
     
 </style>

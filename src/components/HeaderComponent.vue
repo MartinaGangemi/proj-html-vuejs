@@ -1,6 +1,20 @@
 <template>
-    <header>
-        <Nav />
+    <header id="top">
+        <!-- site Header -->
+        <div class=" site-header p-5 d-flex w-100 justify-content-between align-items-center">
+            <div class="logo-header">
+                <img src="@/assets/img/medical_logo_1x_light.png" alt="">
+            </div>
+            <div class="text-uppercase d-flex align-items-center">
+                <nav>
+                    <ul class="mb-0">
+                        <Nav v-for="(item, index) in menuList" :key="index" :link="item.link" :text="item.text" />
+                    </ul>
+                </nav>
+                <button class="blue ms-5" onclick="location.href='#appointment'">Make appointment</button>
+            </div>
+        </div>
+        <!-- jumbotron -->
         <div class="site-container">
             <div class="row jumbo-container text-light m-0 p-0 align-items-center">
                 <!-- jumbotext -->
@@ -22,13 +36,44 @@ export default {
   name: 'HeaderComponent',
   components:{
       Nav
-  }
+  },
+
+  data(){
+        return{
+            menuList:[
+                {
+                    text:"home",
+                    link:"#"
+                },
+                {
+                    text:"about",
+                    link:"#"
+                },
+                {
+                    text:"departments",
+                    link:"#"
+                },
+                {
+                    text:"articles",
+                    link:"#"
+                }
+
+            ]
+        }
+    }
 }
 
 </script>
 
 
 <style lang="scss" scoped>
+    .site-header{
+         height: 80px;
+        button{
+            font-size: 1.2rem;
+        }
+    }
+    
     header{
         background-image: url(@/assets/img/header-image-homepage.jpg);
         height: 850px;
@@ -43,7 +88,7 @@ export default {
             height: 850px;
             
             .jumbo-container{
-                height: calc(100% - 192px);
+                height: calc(100% - 180px);
                 font-size: 1.5rem;
                 font-weight: 300;
             }
@@ -55,12 +100,7 @@ export default {
             .text-color{
                 color: $pelorous;
             }
-
-            button{
-                font-size: 1.2rem;
-            }
         }
     }
 
-    
 </style>

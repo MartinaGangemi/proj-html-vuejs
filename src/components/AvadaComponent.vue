@@ -78,7 +78,4 @@ export default{
         color: $pelorous;
     }
 
-
-
-    
 </style>

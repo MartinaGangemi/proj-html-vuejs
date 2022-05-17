@@ -1,7 +1,7 @@
 <template>
     <footer>
         <div class="row m-0 p-5">
-            <!-- col -->
+            <!-- logo -->
             <div class="col-4">
                 <img src="@/assets/img/medical_logo_1x_dark.png" alt="">
                 <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam rerum earum beatae repellat. Voluptatem debitis asperiores perferendis sint, magnam ex, adipisci laboriosam officiis itaque libero nisi ab dolor delectus.</p>
@@ -12,7 +12,7 @@
                 <a href="#"><font-awesome-icon icon="fa-brands fa-youtube-square" /></a>
                 <a href="#"><font-awesome-icon icon="fa-brands fa-instagram-square" /></a>
             </div>
-            <!-- col -->
+            <!-- information -->
             <div class="col-4">
                 <h5 class="text-uppercase info">contact information</h5>
                 <ul class="mt-5 ps-0">
@@ -26,7 +26,7 @@
                     </li>
                 </ul>
             </div>
-            <!-- col -->
+            <!-- medical departments -->
             <div class="col-4">
                 <h5 class="text-uppercase departments">medical departments</h5>
                 <ul class="mt-5 ps-0">
@@ -37,7 +37,11 @@
                 <button class="lighter fw-normal mt-5">view our departments</button>
             </div>
         </div>
-    <div class="px-5 py-3 copyright">Copyright 2012-2020 | Avada Theme by Theme Fusion | All Right Reserved | Powered by <strong>WordPress</strong> </div>   
+        <!-- copyright -->
+    <div class="px-5 py-3 copyright">
+        Copyright 2012-2020 | Avada Theme by Theme Fusion | All Right Reserved | Powered by <strong>WordPress</strong>
+    <div class="top rounded-top d-flex justify-content-center align-items-center"><a href="#top"><font-awesome-icon icon="fa-solid fa-chevron-up" /></a></div>
+    </div>   
     </footer>
 </template>
 
@@ -112,6 +116,17 @@ export default {
         background-color: $Gallery;
         font-size: 0.8rem;
         color: gray;
+        position: relative;
+    }
+
+    .top{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: #474747;
+        margin-right:2.5rem ;
+        width: 40px;
+        height: 30px;
     }
 
   
