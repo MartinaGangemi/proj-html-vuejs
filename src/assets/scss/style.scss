@@ -80,3 +80,23 @@ a{
 .mx-datepicker svg {
     display: none;
 }
+
+
+.site-header, .right-header{
+    transition:  1s;
+}
+// breakpoints
+@media only screen and (max-width: 1100px) {
+    .site-header, .right-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    .jumbo-text{
+        padding-top: 10rem;
+        h1{
+            font-size: 2rem;
+        }
+    }
+
+  }
