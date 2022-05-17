@@ -1,5 +1,5 @@
 <template>
-    <div class="jumbo" id="appointment">
+    <div class="jumbo py-1" id="appointment">
         <div class="site-container jumbo-text d-flex flex-column align-items-center justify-content-center">
             <section class="text-light text-center">
                 <h2>Make an appointment</h2>
@@ -7,10 +7,10 @@
             </section>
             <form  class="mt-4" >
                 <div class="row g-4">
-                    <div class="col-6"><input class="form-control" placeholder="Name*" type="name" required></div>
-                    <div class="col-6"><input class="form-control" placeholder="Email*" type="email" required></div>
-                    <div class="col-6"><input class="form-control" placeholder="Phone Number*" type="tel" required></div>
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6"><input class="form-control" placeholder="Name*" type="name" required></div>
+                    <div class="col-12 col-sm-6"><input class="form-control" placeholder="Email*" type="email" required></div>
+                    <div class="col-12 col-sm-6"><input class="form-control" placeholder="Phone Number*" type="tel" required></div>
+                    <div class="col-12 col-sm-6">
                          <font-awesome-icon icon="fa-solid fa-calendar-days" /> 
                         <date-picker   
                         :disabled-date="disabledBeforeToday"  class=" picker-class form-control" v-model="value1" format="DD/MM/YYYY" placeholder=" Appontment date*" type="date"   required >
@@ -64,12 +64,13 @@ export default{
 <style lang="scss" scoped>
 .jumbo{
     background-image: url(@/assets/img/make-an-appointment.jpg);
-    height: 900px;
+    min-height: 900px;
     background-image: contain;
     background-position: center;
     
-    .jumbo-text{
+    .site-container{
         height: 100%;
+        padding: 0;
     }
 
     form, section{

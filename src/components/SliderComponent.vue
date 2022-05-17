@@ -2,7 +2,7 @@
     <div class="bg">
         <div class="container text-center">
             <VueSlickCarousel v-bind="settings">
-                <img class="p-4" v-for="(img, index) in slider" :src="img.src" :key="index" alt="" >
+                <img class="p-0 p-sm-4" v-for="(img, index) in slider" :src="img.src" :key="index" alt="" >
             </VueSlickCarousel>
         </div>
     </div>

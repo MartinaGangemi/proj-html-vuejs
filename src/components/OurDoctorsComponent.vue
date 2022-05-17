@@ -10,9 +10,9 @@
                 </p>
                 </section>
             </div>
-            <div class="row gx-5 my-5">
+            <div class="row g-5 my-5 m-0">
                 <!-- doctor card -->
-                <div class="col-4"  v-for="(doctor, index) in doctors" :key="index">
+                <div class="col-12 col-md-4 "  v-for="(doctor, index) in doctors" :key="index">
                     <div class="card bg-white rounded-0 border-0">
                         <img :src="doctor.src" alt="">
                         <div class="p-5">

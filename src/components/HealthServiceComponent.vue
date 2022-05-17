@@ -9,9 +9,9 @@
             </p>
             </section>
         </div> 
-        <div class="row mt-5 g-5">
+        <div class="row mt-5 g-5 m-0">
             <!-- col -->
-            <div class="col-4 services text-center " v-for="(service, index) in services" :key="index">
+            <div class="col-12 col-sm-6 col-md-4 services text-center " v-for="(service, index) in services" :key="index">
                 <img :src="service.src" alt="">
                 <h5 class="text-uppercase mt-4">{{service.title}}</h5>
                 <p class="mt-4">{{service.description}} </p>

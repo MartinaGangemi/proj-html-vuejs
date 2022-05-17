@@ -25,25 +25,26 @@ export default{
     height: 700px;
     background-image: contain;
     background-position: center;
-    .jumbo-text{
+    .site-container{
         height: 100%;
-        section{
-            width: 70%;
-            h2{
-                position: relative;
-                text-transform: uppercase;
+        padding: 0;
+            section{
+                width: 70%;
+                h2{
+                    position: relative;
+                    text-transform: uppercase;
+                }
+                h2:after {
+                    border-bottom: solid 2px $light;
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    width: 40%;
+                    top: 80px;
+                    margin: 0 auto;
+                }
             }
-            h2:after {
-                border-bottom: solid 2px $light;
-                content: '';
-                position: absolute;
-                left: 0;
-                right: 0;
-                width: 40%;
-                top: 80px;
-                margin: 0 auto;
-            }
-        }
     }
 }
 
