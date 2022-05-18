@@ -21,7 +21,7 @@
                 <div class="col-12 col-md-7 jumbo-text">
                 <h1>Caring <span class="text-color">For Life</span> </h1>
                 <p class="mt-3">
-                    kind words can be short and easy to speak, but their echoes are truly endless. Avada Health focused on you as if it was our own family.
+                    Kind words can be short and easy to speak, but their echoes are truly endless. Avada Health focused on you as if it was our own family.
                 </p>
                 <button class="blue py-4 mt-5">Learn More</button>
             </div>

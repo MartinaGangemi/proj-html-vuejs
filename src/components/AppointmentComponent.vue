@@ -60,7 +60,7 @@ export default{
 <style lang="scss" scoped>
 .jumbo{
     background-image: url(@/assets/img/make-an-appointment.jpg);
-    height: 900px;
+    height: 950px;
     background-image: contain;
     background-position: center;
     
@@ -113,5 +113,7 @@ export default{
         margin: 0 auto;
     }
 }
+
+
 
 </style>

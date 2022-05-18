@@ -5,7 +5,7 @@
                 <img src="@/assets/img/icon-7.png" alt="">
                 <h2 class="mt-3">Tour our facilities</h2>
                 <p class="mt-5 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus minima id ad, necessitatibus fuga blanditiis facilis dolores sit dolore quas saepe adipisci, inventore officiis tempore nulla rem dolor itaque vero!</p>
-                <a href="#"><img  class="mt-3" src="@/assets/img/play-icon.png" alt=""></a>
+                <a href="https://youtu.be/Zo8DUqeSsIU"><img  class="mt-3" src="@/assets/img/play-icon.png" alt=""></a>
             </section>
         </div>
     </div>
